@@ -1,0 +1,214 @@
+html{
+    scroll-behavior: smooth;
+}
+
+#backgroundcontainer{
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+#imageId{
+    opacity: 1;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+    z-index: 1;
+}
+
+#imageId.transition{
+    opacity: 0;
+}
+
+#overlaptext{
+  position: absolute;
+  top: 45%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  background-color: black; 
+  color: #fff; 
+  padding: 10px 20px; 
+  font-size: 40px; 
+  text-align: center;
+}
+
+h1{
+    font-size: 300%;
+    padding: 5%;
+    margin: 0%;
+    text-align: center;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: grey;
+}
+
+nav{
+    background-color: black;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0%;
+}
+
+#page1btn, #page2btn, #page3btn{
+    display: block;
+    margin: auto;
+    width: 30%;
+    transition: width 0.5s;
+}
+
+#page1btn:hover, #page2btn:hover, #page3btn:hover{
+    width: 40%;
+}
+
+
+.text{
+    width: 30%;
+    display: inline-block;
+    background-color: white;
+    margin-top: 0;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 5vh;
+}
+
+a{
+    font-size: 3vh;
+    padding: 3vh;
+    text-decoration: none;
+    padding-bottom: 0%;
+}
+
+
+/* unvisited link */
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+    font-size: 5vh;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+
+p{
+    font-size: 3vh;
+}
+
+.contentCls{
+    border: 5px solid black;
+    display: block;
+    margin: auto;
+    width: 50%;
+    background-color: whitesmoke;
+    text-align: center;
+    border-width: 1;
+    margin-bottom: 20vh;
+}
+
+#gameBorderId{
+    border: 5px solid black;
+    display: block;
+    margin: auto;
+    width: 95%;
+    background-color: whitesmoke;
+    text-align: center;
+    border-width: 1;
+    padding-bottom: 5%;
+    margin-bottom: 20vh;
+}
+
+#gameAreaId{
+    border: 5px solid black;
+    display: block;
+    margin: auto;
+    width: 85%;
+    height: 80vh;
+    background-color: whitesmoke;
+    text-align: center;
+    border-width: 1;
+    margin-bottom: 0;
+}
+
+#timerDisplay{
+    font-size: 3em;
+    font-weight: bold;
+    color: red; 
+    min-width: 150px;
+    text-align: center;
+}
+
+#chickenId {position: relative;width:10vw;
+transition: all 0.5s;
+}
+
+#hamIcon{
+    background: url('Images/sprite.png') no-repeat -135px -361px;; 
+	width: 18px;
+	height: 14px;
+}
+
+#btnFS{
+    background: url('Images/sprite.png') no-repeat -5px -391px;
+	width: 22px;
+	height: 18px;
+}
+
+#btnWS{
+    background: url('Images/sprite.png') no-repeat -135px -295px;
+	width: 18px;
+	height: 18px;
+}
+
+footer{
+    margin: 0%;
+    background-color: grey;
+    text-align: center;
+}
+
+@media (max-width:800px){ /*at mobile size*/
+#qrcodeId{display:none;} /*hide QR code */
+#scantext{display:none;}
+}
+
+.page{height:auto;}
+#page1{background: grey}
+#page2{background:grey}
+#page3{background:grey}
+
+/*CSS for responsive menu*/
+#hamIcon{display:none;}
+@media (max-width:800px){
+/*make a menu items vertical*/
+nav ul li{display:block;}
+/* unhide menu icon */
+#hamIcon{display:inline-block;}
+/*hide the menu item list*/
+nav ul{display:none;}
+}
+/*to unhide menu items*/
+.menuShow{display:block;}

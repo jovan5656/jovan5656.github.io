@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jovan A2 Webdev</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="backgroundcontainer">
+        <img src="Images/bodybuilding.jpg" id="imageId" width="100%" >
+        <h1 id="overlaptext">BODYBUILDING</h1>
+    </header>
+    <nav>
+        <img src="Images/sprite.png" id="btnFS" alt="Fullscreen">
+        <img src="Images/sprite.png" id="btnWS" alt="Exit Fullscreen">
+        <!--hamburger icon for mobile-->
+        <img src="Images/sprite.png" id="hamIcon">
+        <ul>
+            <li><img src="Images/bodybuildinghistory.jpg" id="page1btn" alt="Page 1"></li>
+            <p class="text">History</p>
+            <li><img src="Images/weightlifting.png" id="page2btn" alt="Page 2"></li>
+            <p class="text">Weight lifting</p>
+            <li><img src="Images/eating.png" id="page3btn" alt="Page 3"></li>
+            <p class="text">Nutrition</p>
+        </ul>
+    </nav>
+    <main id="pagecontainer">
+        <section class="page" id="page1">
+            <nav>
+                <a href="#Thebronzeera">The Bronze Era</a>
+                <a href="#Thesilverera">The Silver Era</a>
+                <a href="#Thegoldenera">The Golden Era</a>
+                <a href="#Themassmonsterera">The Mass Monster Era</a>
+                <a href="#Themodernera">The Modern Era</a>
+                <a href="#quizId">Quiz</a>
+            </nav>
+            <h1>History Of Bodybuilding</h1>
+            <section class="contentCls">
+                <h2 id="Thebronzeera">The Bronze Era</h2>
+                <p>
+                    The Bronze era of bodybuilding, roughly spanning the late 19th century to the 1930s, marked a shift from strength exhibitions to a focus on physique development and physical culture. This era saw the rise of bodybuilding pioneers like Eugen Sandow, who popularized the sport through training, diet, and impressive physiques. 
+                </p>
+                <img src="Images/bronzeera.png" width="70%" alt="The bronze era">
+            </section>
+
+            <section class="contentCls">
+                <h2 id="Thesilverera">The Silver Era</h2>
+                <p>
+                    The Silver Era of bodybuilding, roughly spanning the 1940s to the early 1960s, is celebrated for its emphasis on natural, balanced, and aesthetically pleasing physiques, often considered the peak of classic bodybuilding. Bodybuilders of this era, like Steve Reeves and Reg Park, prioritized health, strength, and symmetry, rather than extreme size or bulk. 
+                </p>
+                <img src="Images/silverera.jpg" width="70%" alt="The silver era">
+            </section>
+
+            <section class="contentCls">
+                <h2 id="Thegoldenera">The Golden Era</h2>
+                <p>
+                    The Golden Era of bodybuilding generally refers to the period from the 1960s through the 1980s. It's characterized by a focus on aesthetics, symmetry, and classic physique development, with athletes like Arnold Schwarzenegger, Frank Zane, and Sergio Oliva becoming iconic figures. This era saw bodybuilding evolve from an obscure activity to a mainstream spectacle, with popular magazines, training principles, and physique contests. 
+                </p>
+                <img src="Images/goldenera.png" width="70%" alt="The golden era">
+            </section>
+
+            <section class="contentCls">
+                <h2 id="Themassmonsterera">The Mass Monster Era</h2>
+                <p>
+                    The mass monster era of bodybuilding, dominant from the late 1980s through the 2000s, was characterized by bodybuilders prioritizing extreme muscle size and mass over aesthetics and symmetry, often achieved through extensive drug use. This era saw bodybuilders grow to unprecedented weights, with some exceeding 300 pounds on stage. Key figures include Dorian Yates, who ushered in the era, and Ronnie Coleman, a multiple-time Mr. Olympia known for his immense size and strength. 
+                <img src="Images/massmonsterera.jpg" width="70%" alt="The mass monster era">
+            </section>
+
+            <section class="contentCls">
+                <h2 id="Themodernera">The Modern Era</h2>
+                <p>
+                    The modern era of bodybuilding (2010s-present) showcases a dual focus on extreme mass in Open Bodybuilding and aesthetic appeal in divisions like Classic Physique. Driven heavily by social media, which shapes athlete branding and fan engagement, this period also features more scientifically refined training and nutrition, alongside the persistent, often controversial, use of performance-enhancing drugs at the professional level.
+                </p>
+                <img src="Images/modernera.png" width="70%" alt="The modern era">
+            </section>
+
+            <section class="contentCls">
+                <h1 id="quizId">History Quiz</h1>
+                <fieldset>
+                    <legend>1. What was the first era of bodybuilding called?</legend>
+                    <label><input type="radio" name="q1" value="TheBronzeera"> The Bronze era</label>
+                    <label><input type="radio" name="q1" value="TheSilverera"> The Silver era</label>
+                    <label><input type="radio" name="q1" value="TheGoldenera"> The Golden era</label>
+                    <label><input type="radio" name="q1" value="TheMassera"> The Mass Monster era</label>
+                    <label><input type="radio" name="q1" value="TheModernera"> The Modern era</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>2. What era prioritized extensive drug usage?</legend>
+                    <label><input type="radio" name="q2" value="TheBronzeera"> The Bronze era</label>
+                    <label><input type="radio" name="q2" value="TheSilverera"> The Silver era</label>
+                    <label><input type="radio" name="q2" value="TheGoldenera"> The Golden era</label>
+                    <label><input type="radio" name="q2" value="TheMassera"> The Mass Monster era</label>
+                    <label><input type="radio" name="q2" value="TheModernera"> The Modern era</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>3. What era was Arnold Schwarzenegger in?</legend>
+                    <label><input type="radio" name="q3" value="TheBronzeera"> The Bronze era</label>
+                    <label><input type="radio" name="q3" value="TheSilverera"> The Silver era</label>
+                    <label><input type="radio" name="q3" value="TheGoldenera"> The Golden era</label>
+                    <label><input type="radio" name="q3" value="TheMassera"> The Mass Monster era</label>
+                    <label><input type="radio" name="q3" value="TheModernera"> The Modern era</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>4. Which era of bodybuilding was Eugen Sandow a key figure of?</legend>
+                    <label><input type="radio" name="q4" value="TheBronzeera"> The Bronze era</label>
+                    <label><input type="radio" name="q4" value="TheSilverera"> The Silver era</label>
+                    <label><input type="radio" name="q4" value="TheGoldenera"> The Golden era</label>
+                    <label><input type="radio" name="q4" value="TheMassera"> The Mass Monster era</label>
+                    <label><input type="radio" name="q4" value="TheModernera"> The Modern era</label>
+                </fieldset>
+                <button id="btnSubmit">Submit quiz</button>
+                <h3 id="scorebox">Not submitted</h3>
+            </section>
+
+            <nav>
+                <a href="#backgroundcontainer">Back to top</a>
+                <a href="#page1">Back to History</a>
+            </nav>
+            
+        </section>
+        <section class="page" id="page2">
+            <nav>
+                <a href="#Aboutweightlifting">About Weightlifting</a>
+                <a href="#Musclegrowth">Muscle Growth and Strength</a>
+                <a href="#Trainingtechniques">Training Techniques</a>
+            </nav>
+            <h1>Weight lifting</h1>
+            <section class="contentCls">
+                <h2 id="Aboutweightlifting">About</h2>
+                <p>
+                    Weightlifting, particularly for bodybuilding, involves using resistance exercises to build muscle mass and strength. It's a combination of strength training and a focus on nutrition to achieve a muscular physique. Key aspects include choosing appropriate weight, maintaining proper form, and progressively increasing the challenge as you get stronger. 
+                </p>
+            </section>
+
+            <section class="contentCls">
+                <h2 id="Musclegrowth">Muscle Growth and Strength</h2>
+                <p>
+                    Bodybuilding primarily aims for maximizing muscle size, or hypertrophy, through weight training, while strength training, though also building muscle, prioritizes increasing the force a muscle can produce; although both disciplines involve lifting weights, their specific rep ranges and exercise selections often differ to achieve their respective goals.
+                </p>
+                <img src="Images/beforeafter.png" width="70%" alt="before and after">
+            </section>
+
+            <section class="contentCls">
+                <h2 id="Trainingtechniques">Training Techniques</h2>
+                <p>
+                    Free weights like barbells, dumbbells, and kettlebells provide a wide range of exercise options and movements, while weight machines offer guided movements that are beneficial for isolating specific muscles. Regardless of the equipment used, maintaining proper form is crucial to prevent injuries and ensure maximum muscle activation. For continuous muscle growth, progressive overload—gradually increasing weight, reps, or or sets—is essential over time.
+                </p>
+                <img src="Images/trainingform.png" width="70%" alt="proper training form">
+            </section>
+
+            <nav>
+                <a href="#backgroundcontainer">Back to top</a>
+                <a href="#page2">Back to Weight lifting</a>
+            </nav>
+        </section>
+        
+        <section class="page" id="page3">
+            <nav>
+                <a href="#Aboutnutrition">About Nutrition</a>
+                <a href="#Protein">Protein</a>
+                <a href="#Carbs">Carbohydrate</a>
+                <a href="#Fats">Fats</a>
+                <a href="#Foodsources">Food Sources</a>
+                <a href="#NutritionalStrategies">Key Nutritional Strategies</a>
+                <a href="#gameBorderId">Protein Eater Game</a>
+            </nav>
+            <h1>Nutrition</h1>
+            <section class="contentCls">
+                <h2 id="Aboutnutrition">About</h2>
+                <p>
+                    Bodybuilding nutrition focuses on fueling muscle growth and recovery through a strategic combination of macronutrients: protein, carbohydrates, and fats, along with proper timing and hydration. A well-planned diet, tailored to individual needs and goals, is crucial for achieving success in bodybuilding. 
+                </p>
+            </section>
+
+            <section class="contentCls">
+                <h2 id="Protein">Protein</h2>
+                <p>
+                    Essential for muscle repair and growth, bodybuilders typically aim for 1.6-2.2 grams of protein per kilogram of body weight per day, especially during the off-season for muscle gain. Lean protein sources like chicken breast, fish, and whey protein are popular choices. 
+                </p>
+                <img src="Images/protein.jpg" width="70%" alt="protein">
+            </section>
+
+            <section class="contentCls">
+                <h2 id="Carbs">Carbs</h2>
+                <p>
+                    Provide the energy needed for intense workouts and replenish glycogen stores. Complex carbohydrates from sources like whole grains, fruits, and starchy vegetables are preferred. Carbohydrate intake can be adjusted based on individual needs and training phases. 
+                </p>
+                <img src="Images/carbs.jpg" width="70%" alt="carbohydrates">
+            </section>
+
+            <section class="contentCls">
+                <h2 id="Fats">Fats</h2>
+                <p>
+                    Important for hormone production and overall health. Healthy fats from sources like nuts, seeds, and olive oil are beneficial. Bodybuilders typically consume 15-20% of their daily calories from fats. 
+                </p>
+                <img src="Images/fats.jpg" width="70%" alt="fats">
+            </section>
+
+            <section class="contentCls">
+                <h2 id="Foodsources">Food Sources</h2>
+                <p>
+                    Bodybuilders prioritize specific macronutrient sources: proteins include chicken breast, turkey, fish (salmon, tuna), lean beef, eggs, Greek yogurt, cottage cheese, whey protein, beans, and lentils; carbohydrates are sourced from oatmeal, brown rice, quinoa, sweet potatoes, fruits, and vegetables; and healthy fats come from nuts, seeds, olive oil, and avocado.
+                </p>
+            </section>
+
+            <section class="contentCls">
+                <h2 id="NutritionalStrategies">Key Nutritional Strategies</h2>
+                <p>
+                    For bodybuilders, calorie intake is carefully managed, with a slight surplus (10-20%) often recommended during the off-season for muscle gain, contrasting with a slight deficit (15% or more) used in preparation for competition. Meal frequency is also key, with regular intervals (every 2-3 hours) helping to maintain a positive nitrogen balance essential for muscle protein synthesis. Furthermore, strategic timing of nutrients, such as consuming fast-digesting carbohydrates and protein after workouts, significantly aids in muscle recovery.
+                </p>
+            </section>
+
+            <section id="gameBorderId">
+                <h1>Protein Eater Game</h1>
+                <p>Eat as much protein as you can!</p>
+                <p>Click on the food to eat!</p>
+                <h2 id="scoreBox"></h2>
+                <h3 id="timerDisplay"></h3>
+                <button id="startbtn">START</button>
+                <section id="gameAreaId">
+                    <img id="chickenId" src="Images/chicken.png" alt="chicken">
+                </section>
+            </section>
+            
+            <nav>
+                <a href="#backgroundcontainer">Back to top</a>
+                <a href="#page3">Back to Nutrition</a>
+            </nav>
+        </section>
+    </main>
+    <footer>
+        <h2 id="scantext">Scan for mobile</h2>
+        <img src="Images/qrcode.png" id="qrcodeId" alt="Qr code">
+    </footer>
+</body>
+</html>
