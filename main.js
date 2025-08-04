@@ -1,3 +1,6 @@
+
+
+const imageId = document.getElementById("imageId");
 //front page transition opacity
 function imageTransitionDisappear() {
     imageId.classList.add("transition");
@@ -7,9 +10,9 @@ function imageTransitionAppear() {
     imageId.classList.remove("transition");
 }
 
-imageTransitionDisappear = setInterval(imageTransitionDisappear, 3000)
+var imageTransitionDisappear = setInterval(imageTransitionDisappear, 3000);
 
-imageTransitionAppear = setInterval(imageTransitionAppear, 9000)
+var imageTransitionAppear = setInterval(imageTransitionAppear, 9000);
 
 
 //target all elements to save to constants
@@ -33,15 +36,15 @@ function show(pgno){ //function to show selected page no
 eventhandler functions to call show function*/
 page1btn.addEventListener("click", function () {
     show(1);
-    window.location.href = '#page1'
+    window.location.href = '#page1';
 });
 page2btn.addEventListener("click", function () {
     show(2);
-    window.location.href = '#page2'
+    window.location.href = '#page2';
 });
 page3btn.addEventListener("click", function () {
     show(3);
-    window.location.href = '#page3'
+    window.location.href = '#page3';
 });
 hideall();
 
@@ -105,7 +108,7 @@ function MoveChicken() {
 chickenId.style.left = GetRandom(-40, 40) + "%";
 chickenId.style.top = GetRandom(0, 65) + "vh";
 }
-var moveChickenItvId = setInterval(MoveChicken, 1000);
+var MoveChicken = setInterval(MoveChicken, 1000);
 
 const timerDisplay = document.getElementById("timerDisplay");
 const scoreBox=document.getElementById("scoreBox");
@@ -114,6 +117,7 @@ const imageChicken = document.getElementById("chickenId");
 const startButton = document.getElementById("startbtn");
 
 let timer=10;
+let countdownTimer;
 imageChicken.style.display = "none";
 function startCountdownTimer() {
 
@@ -127,13 +131,14 @@ function startCountdownTimer() {
 
         if (timer < 0) {
             clearInterval(countdownTimer); // Stop the timer
-            timerDisplay.innerHTML = "0"
+            timerDisplay.innerHTML = "0";
             gameOver();
         }
     }, 1000);
     
 }
 
+const startbtn = document.getElementById("startbtn");
 startbtn.addEventListener("click", function () {
     startGame();
 });
