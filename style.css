@@ -57,9 +57,15 @@ nav{
     padding: 10px;
 }
 
+
 nav ul{
     list-style: none;
     padding: 0%;
+}
+
+.HistoryNav{
+    padding: 2%;
+    display: block;
 }
 
 #page1btn, #page2btn, #page3btn{
@@ -76,6 +82,7 @@ nav ul{
     max-width: 70%;
 }
 
+/* Main navigation text*/
 .text{
     width: 30vw;
     display: block;
@@ -196,15 +203,14 @@ footer{
     text-align: center;
 }
 
-@media (max-width:800px){ /*at mobile size*/
-#qrcodeId{display:none;} /*hide QR code */
-#scantext{display:none;}
-}
+
 
 .page{height:auto;}
 #page1{background: grey}
 #page2{background:grey}
 #page3{background:grey}
+
+
 
 /*CSS for responsive menu*/
 #hamIcon{display:none;}
@@ -216,6 +222,9 @@ width: 30vw;}
 #hamIcon{display:inline-block;}
 /*hide the menu item list*/
 nav ul{display:none;}
+#qrcodeId{display:none;} /*hide QR code */
+#scantext{display:none;}
+.ContentNav{display: block; padding: 2%;}
 }
 /*to unhide menu items*/
 .menuShow{display:block;}
